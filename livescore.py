@@ -3,7 +3,7 @@ import time
 from urllib.request import urlopen
 while 1:
     #html = urlopen("http://cricket.yahoo.com/cricket-live-score-bangladesh-vs-india_194256#fullScorecard")
-	html = urlopen(url)
+    html = urlopen(url)
     bsObj = BeautifulSoup(html)
     Score=bsObj.find("span",{"class":"scr"}).get_text()
     Overs=bsObj.find("div",{"class":"ings-overs"}).get_text()
