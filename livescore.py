@@ -15,5 +15,5 @@ while 1:
     print(a[1].get_text())
     print(b[0].get_text())
     print(b[1].get_text())
-    print("------------------------------")
+    print("-----------------------------")
     time.sleep(5)   
